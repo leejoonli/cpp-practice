@@ -4,6 +4,8 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    char name[] = "lulu";
+    int i = 1;
+    cout << name << endl;
     return 0;
 }
