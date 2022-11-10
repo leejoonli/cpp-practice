@@ -17,8 +17,8 @@ int main()
     }*/
     int i;
     string c;
-    cout << "type in name: " << endl;
-    cin >> c;
+    cout << "type in full name: " << endl;
+    getline(cin, c);
 
     cout << "type in i: " << endl;
     cin >> i;
