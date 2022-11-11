@@ -17,12 +17,18 @@ int main()
     }*/
     int i;
     string c;
-    cout << "type in full name: " << endl;
-    getline(cin, c);
+    cout << "type in full name and i: " << endl;
+    /*getline(cin, c);
 
     cout << "type in i: " << endl;
+    cin >> c >> i;*/
+
+    getline(cin, c);
     cin >> i;
 
     cout << c << " " << i << endl;
+
+    /*cerr << "error" << endl;
+    clog << "log message" << endl;*/
     return 0;
 }
