@@ -30,6 +30,7 @@ int main()
 
     cerr << "error" << endl;
     clog << "log message" << endl;*/
+
     int i(1);
     int j(2);
     int k(i+j);
