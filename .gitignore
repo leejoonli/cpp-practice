@@ -3,3 +3,8 @@
 /hello-world/hello-world.cbp
 /hello-world/hello-world/layout
 /hello-world/hello-world/depend
+/integer_types/bin
+/integer_types/obj
+/integer_types/integer_types.cbp
+/integer_types/integer_types/layout
+/integer_types/integer_types/depend
