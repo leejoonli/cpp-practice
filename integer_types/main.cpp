@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 
-    // braced initializers
+    /*// braced initializers
     // variable may contain random garbage value if not initialized
     int i;
 
@@ -17,6 +17,20 @@ int main() {
 
     // initialization using expression
     int m{k + l};
-    cout << i << "\n" << j << "\n" << k << "\n" << l << "\n" << m << endl;
+
+    // error because initializing with incorrect data type
+    int n{1.1};
+
+    cout << i << "\n" << j << "\n" << k << "\n" << l << "\n" << m << endl;*/
+
+    // functional initialization
+    int i(1);
+    int j(2);
+    int k(i+j);
+
+    // data/information loss
+    int l(1.1);
+
+    cout << l << endl;
     return 0;
 }
