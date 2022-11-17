@@ -31,6 +31,9 @@ int main() {
     // data/information loss
     int l(1.1);
 
+    cout << i << endl;
+    cout << j << endl;
+    cout << k << endl;
     cout << l << endl;
     return 0;
 }
