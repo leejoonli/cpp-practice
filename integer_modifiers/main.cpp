@@ -48,7 +48,7 @@ int main() {
     signed long int signed_long_int{44};
     unsigned long int unsigned_long_int{44};
 
-    cout << unsigned_long_int << "\n" << sizeof(unsigned_long_int) << endl;
+    // cout << unsigned_long_int << "\n" << sizeof(unsigned_long_int) << endl;
 
     long long long_long{888}; // 8 bytes
     long long int long_long_int{999};
