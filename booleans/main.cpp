@@ -3,6 +3,11 @@
 using namespace std;
 
 int main() {
-    cout << "Hello world!" << endl;
+    bool test = false;
+    if(test) {
+        cout << "Hello world!" << endl;
+    } else if (!test) {
+        cout << "Wello Horld!" << endl;
+    }
     return 0;
 }
