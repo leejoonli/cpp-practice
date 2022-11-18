@@ -24,10 +24,15 @@ int main() {
     long double number_3{1.12345678901234567890L}; // precision: 15+
     // if value has more digits than the precision it will replace those numbers with garbage values
 
-    cout << setprecision(20);
+    /*cout << setprecision(20);
     cout << number_1 << endl;
     cout << number_2 << endl;
-    cout << number_3 << endl;
+    cout << number_3 << endl;*/
+
+    // float problems: the precision is usually too limited for a lot of applications
+    double number_4(192400023.0); // error: narrowing conversion
+    cout << setprecision(20);
+    cout << number_4 << endl;
 
     return 0;
 }
