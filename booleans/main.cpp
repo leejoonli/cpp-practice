@@ -3,11 +3,13 @@
 using namespace std;
 
 int main() {
-    bool test = false;
-    if(test) {
-        cout << "Hello world!" << endl;
-    } else if (!test) {
-        cout << "Wello Horld!" << endl;
+    bool red_light {true};
+    bool green_light {false};
+
+    if(red_light) {
+        cout << "STOP" << endl;
+    } else {
+        cout << "GO" << endl;
     }
     return 0;
 }
