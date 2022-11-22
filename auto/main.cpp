@@ -17,8 +17,8 @@ int main() {
 
     // be careful about auto assignments
     auto var9{333u}; // declare and initialize with type deduction
-    //var9 = -22; // assign negative number. DANGER!
+    var9 = -22; // assign negative number. DANGER!
 
-    cout << sizeof(var9) << endl;
+    cout << var9 << endl;
     return 0;
 }
