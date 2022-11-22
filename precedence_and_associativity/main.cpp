@@ -24,5 +24,11 @@ int main() {
         2 * 8 + 9 - 3 + 2
         16 + 9 - 3 + 2 = 24*/
     cout << j << endl;
+
+    // can use parenthesis for specific associativity
+    int k = (a + (b * c)) - (d / e) - (f + g); // following PEMDAS
+    cout << k << endl;
+
+    // it is better to make the intent in your code as clear as possible by clearly using parenthesis to indicate which operations you want done first
     return 0;
 }
