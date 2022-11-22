@@ -33,8 +33,8 @@
 /auto/auto.cbp
 /auto/auto.layout
 /auto/auto.depend
-/assignments/bin
-/assignments/obj
-/assignments/assignments.cbp
-/assignments/assignments.layout
-/assignments/assignments.depend
+/basic_operations/bin
+/basic_operations/obj
+/basic_operations/basic_operations.cbp
+/basic_operations/basic_operations.layout
+/basic_operations/basic_operations.depend
