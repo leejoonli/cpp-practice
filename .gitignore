@@ -63,3 +63,8 @@
 /logical_operators/logical_operators.cbp
 /logical_operators/logical_operators.layout
 /logical_operators/logical_operators.depend
+/output_formatting/bin
+/output_formatting/obj
+/output_formatting/output_formatting.cbp
+/output_formatting/output_formatting.layout
+/output_formatting/output_formatting.depend
