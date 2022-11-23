@@ -19,5 +19,11 @@ int main() {
     cout << "i || j: " << (i || j) << endl;
     cout << "i || k: " << (i || k) << endl;
     cout << "i || j || k: " << (i || j || k) << endl;
+
+    cout << "!i: " << !i << endl;
+    cout << "!j: " << !j << endl;
+    cout << "!k: " << !k << endl;
+
+    cout << "!(i && j) || k: " << (!(i && j) || k) << endl;
     return 0;
 }
