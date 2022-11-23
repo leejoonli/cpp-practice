@@ -17,5 +17,9 @@ int main() {
     cout << "i < j: " << (i >= j) << endl;
     cout << "i < j: " << (i == j) << endl;
     cout << "i < j: " << (i != j) << endl;
+
+    // store comparison result and use it later
+    bool temp = (i == j);
+    cout << i << "==" << j << ":" << temp << endl;
     return 0;
 }
