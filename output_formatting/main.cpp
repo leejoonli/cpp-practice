@@ -56,15 +56,25 @@ int main() {
     cout << uppercase; // uppercases characters (nouppercase is default, does not uppercase characters)
     cout << "i dec: " << dec << i << endl;
     cout << "i hex: " << hex << i << endl;
-    cout << "i oct: " << oct << i << endl;*/
+    cout << "i oct: " << oct << i << endl;
 
     double i {3.142346435697872349587};
     double j {2006.0};
     double k {1.34e-10};
 
-    cout << fixed; // shows decimal precision up to a certain amount (default is scientific)
+    cout << fixed; // shows decimal precision up to a certain amount
     cout << "i: " << i << endl;
     cout << "j: " << j << endl;
     cout << "k: " << k << endl;
+
+    cout << scientific;
+    cout << "i: " << i << endl;
+    cout << "j: " << j << endl;
+    cout << "k: " << k << endl;
+
+    cout.unsetf(ios::scientific | ios::fixed); // sets back to default
+    cout << "i: " << i << endl;
+    cout << "j: " << j << endl;
+    cout << "k: " << k << endl;*/
     return 0;
 }
