@@ -41,6 +41,7 @@ int main() {
     cout << "neg_int hex: " << hex << neg_int << endl;
     cout << "neg_int oct: " << oct << neg_int << endl;
 
+    // no effect on floating point numbers
     cout << "double_var dec: " << dec << double_var << endl;
     cout << "double_var hex: " << hex << double_var << endl;
     cout << "double_var oct: " << oct << double_var << endl;
