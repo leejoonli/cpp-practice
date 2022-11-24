@@ -11,6 +11,10 @@ int main() {
     cout << "Hello world!\n";
     cout << "Hello world!\n";
 
+    // flush: flushes the output buffer to its final destination
+    cout << "this is a message" << endl << flush;
+    // after flush, we're sure that at this line, the message has been sent to the stream.  This may be important in some applications.
+
     cout << right; // justification left or right when printing to terminal
     cout << setw(10) << "last name" << setw(10) << "first name" << setw(5) << "age" << endl;
     cout << left;
