@@ -8,7 +8,7 @@ int main() {
     cout << "Hello world!" << endl;
     cout << "Hello world!";
     cout << "Hello world!\n";
-    cout << "Hello world!\n";*/
+    cout << "Hello world!\n";
 
     cout << right; // justification left or right when printing to terminal
     cout << setw(10) << "last name" << setw(10) << "first name" << setw(5) << "age" << endl;
@@ -27,6 +27,22 @@ int main() {
 
     cout << noshowpos; // hide the + sign for positive numbers
     cout << "pos_num: " << i << endl;
-    cout << "neg_num: " << j << endl;
+    cout << "neg_num: " << j << endl;*/
+
+    // different number systems: dec, hex, oct
+    int pos_int {717171};
+    int neg_int {-47347};
+    double double_var {498.32};
+    cout << "pos_int dec: " << dec << pos_int << endl;
+    cout << "pos_int hex: " << hex << pos_int << endl;
+    cout << "pos_int oct: " << oct << pos_int << endl;
+
+    cout << "neg_int dec: " << dec << neg_int << endl;
+    cout << "neg_int hex: " << hex << neg_int << endl;
+    cout << "neg_int oct: " << oct << neg_int << endl;
+
+    cout << "double_var dec: " << dec << double_var << endl;
+    cout << "double_var hex: " << hex << double_var << endl;
+    cout << "double_var oct: " << oct << double_var << endl;
     return 0;
 }
