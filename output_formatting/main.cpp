@@ -76,5 +76,13 @@ int main() {
     cout << "i: " << i << endl;
     cout << "j: " << j << endl;
     cout << "k: " << k << endl;*/
+
+    double i = 3.142346435697872349587928347589;
+    cout << setprecision(10);
+    cout << "i precision 10: " << i << endl;
+    cout << setprecision(20);
+    cout << "i precision 20: " << i << endl;
+    cout << setprecision(50);
+    cout << "i precision 50: " << i << endl; // be careful with setting precision too high because it will be filled with garbage values
     return 0;
 }
