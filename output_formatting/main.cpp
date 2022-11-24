@@ -27,7 +27,7 @@ int main() {
 
     cout << noshowpos; // hide the + sign for positive numbers
     cout << "pos_num: " << i << endl;
-    cout << "neg_num: " << j << endl;*/
+    cout << "neg_num: " << j << endl;
 
     // different number systems: dec, hex, oct
     int pos_int {717171};
@@ -44,6 +44,12 @@ int main() {
     // no effect on floating point numbers
     cout << "double_var dec: " << dec << double_var << endl;
     cout << "double_var hex: " << hex << double_var << endl;
-    cout << "double_var oct: " << oct << double_var << endl;
+    cout << "double_var oct: " << oct << double_var << endl;*/
+
+    int i = 717171;
+    cout << showbase; // show the base for integral types (noshowbase to hide the base)
+    cout << "i dec: " << dec << i << endl;
+    cout << "i hex: " << hex << i << endl;
+    cout << "i oct: " << oct << i << endl;
     return 0;
 }
