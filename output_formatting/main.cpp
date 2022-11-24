@@ -44,10 +44,16 @@ int main() {
     // no effect on floating point numbers
     cout << "double_var dec: " << dec << double_var << endl;
     cout << "double_var hex: " << hex << double_var << endl;
-    cout << "double_var oct: " << oct << double_var << endl;*/
+    cout << "double_var oct: " << oct << double_var << endl;
 
     int i = 717171;
     cout << showbase; // show the base for integral types (noshowbase to hide the base)
+    cout << "i dec: " << dec << i << endl;
+    cout << "i hex: " << hex << i << endl;
+    cout << "i oct: " << oct << i << endl;*/
+
+    int i = 717171;
+    cout << uppercase; // uppercases characters (nouppercase is default, does not uppercase characters)
     cout << "i dec: " << dec << i << endl;
     cout << "i hex: " << hex << i << endl;
     cout << "i oct: " << oct << i << endl;
