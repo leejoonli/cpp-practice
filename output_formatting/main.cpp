@@ -75,7 +75,7 @@ int main() {
     cout.unsetf(ios::scientific | ios::fixed); // sets back to default
     cout << "i: " << i << endl;
     cout << "j: " << j << endl;
-    cout << "k: " << k << endl;*/
+    cout << "k: " << k << endl;
 
     double i = 3.142346435697872349587928347589;
     cout << setprecision(10);
@@ -83,6 +83,17 @@ int main() {
     cout << setprecision(20);
     cout << "i precision 20: " << i << endl;
     cout << setprecision(50);
-    cout << "i precision 50: " << i << endl; // be careful with setting precision too high because it will be filled with garbage values
+    cout << "i precision 50: " << i << endl; // be careful with setting precision too high because it will be filled with garbage values*/
+
+    double i = 34.1;
+    double j = 101.99;
+    double k = 12.0;
+    double l = 45;
+
+    cout << showpoint; // show trailing zeros if necessary (noshowpoint hides trailing zeros)
+    cout << "i: " << i << endl;
+    cout << "j: " << j << endl;
+    cout << "k: " << k << endl;
+    cout << "l: " << l << endl;
     return 0;
 }
