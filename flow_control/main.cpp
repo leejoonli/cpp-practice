@@ -61,5 +61,9 @@ int main() {
         }
     }*/
 
+    // ternary (types must be convertible)
+    /*int temp = true ? 1 : 2; // ternary initialization
+    cout << temp << endl;*/
+
     return 0;
 }
