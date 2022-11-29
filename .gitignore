@@ -73,3 +73,8 @@
 /numeric_limits/numeric_limits.cbp
 /numeric_limits/numeric_limits.layout
 /numeric_limits/numeric_limits.depend
+/math_functions/bin
+/math_functions/obj
+/math_functions/math_functions.cbp
+/math_functions/math_functions.layout
+/math_functions/math_functions.depend
