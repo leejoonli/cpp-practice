@@ -88,3 +88,8 @@
 /flow_control/flow_control.cbp
 /flow_control/flow_control.layout
 /flow_control/flow_control.depend
+/loops/bin
+/loops/obj
+/loops/loops.cbp
+/loops/loops.layout
+/loops/loops.depend
