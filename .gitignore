@@ -68,3 +68,8 @@
 /output_formatting/output_formatting.cbp
 /output_formatting/output_formatting.layout
 /output_formatting/output_formatting.depend
+/numeric_limits/bin
+/numeric_limits/obj
+/numeric_limits/numeric_limits.cbp
+/numeric_limits/numeric_limits.layout
+/numeric_limits/numeric_limits.depend
