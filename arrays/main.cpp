@@ -55,5 +55,11 @@ int main() {
     char hello[] {'h', 'e', 'l', 'l', 'o', '\0'}; // can add a null terminating character and the char array will be printed out like a string
     cout << hello << endl;*/
 
+    /*int numbers[] {1,2,3,4,5};
+    cout << numbers[19] << endl; // can read beyond bounds of array
+
+    // can write beyond bounds but you don't own the memory so other programs can modify it and your program may read garbage data at a later time or you can even corrupt data used by other parts of your program
+    numbers[10] = 100;
+    cout << numbers[10] << endl;*/
     return 0;
 }
