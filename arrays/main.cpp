@@ -49,9 +49,10 @@ int main() {
     cout << hello << endl; // direct print out: can print out to terminal like this but will include \0 character
     char hello[6] {'h', 'e', 'l', 'l', 'o'}; // auto filled in null characters
     cout << hello << endl; // will print to terminal without null terminating character
-    char hello[] {'h', 'e', 'l', 'l', 'o'}; // this is not a c string as there is not a null character, will probably print some garbage value after 'hello'
+    char hello[] {'h', 'e', 'l', 'l', 'o'}; // this is not a c string as there is not a null character, will probably print some garbage value after 'hello', DO NOT USE THIS
     cout << hello << endl;
     char hello[] {"hello"}; // literal c strings, an implicit \0 is appended to the end of the string
+    char hello[] {'h', 'e', 'l', 'l', 'o', '\0'}; // can add a null terminating character and the char array will be printed out like a string
     cout << hello << endl;*/
 
     return 0;
