@@ -34,7 +34,14 @@ int main() {
     /*int *p_i {}; // initialized with pointer equivalent of zero: nullptr (pointer pointing nowhere)
     *p_i = 11; // writing into a pointer pointing nowhere is BAD, WILL CRASH*/
 
-
+    int *p_i = nullptr;
+    p_i = new int; // dynamically allocate space for a single int on the heap
+                   // this memory belongs to our program from now on
+                   // the system can't use it for anything else until we return it
+                   // after this line executes, we will have a valid memory location allocated
+                   // the size of the allocated memory will be such that it can store the type pointed to by the pointer
+    *p_i = 10; // writing into dynamically allocated memory
+    cout << *p_i << endl;
 
     /*int *p_i = new int {10};
     cout << *p_i << endl;*/
