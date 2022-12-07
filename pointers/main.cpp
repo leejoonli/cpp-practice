@@ -125,5 +125,29 @@ int main() {
         cerr << "WARNING: trying to use an invalid pointer" << endl;
     }*/
 
+    /*int *test = new int[1000000000000000000000000000]; // will throw error since array size is too large
+
+    for(size_t i{0}; i < 10000000; i++) {
+        int *temp = new int[100000000];
+    }*/
+
+    // exception
+    /*for(size_t i{0}; i < 100; i++) {
+        try {
+            int *temp = new int[100000000000];
+        } catch(exception& ex) {
+            cout << "something went wrong: " << ex.what() << endl; // doesn't crash and shows exception
+        }
+    }
+    cout << "program ending well" << endl;*/
+    // std::nothrow
+    /*for(size_t i{0}; i < 100; i++) {
+        int *temp = new(nothrow) int[1000000000];
+        if(temp != nullptr) {
+            cout << "data allocated" << endl;
+        } else {
+            cout << "data allocation failed" << endl;
+        }
+    }*/
     return 0;
 }
