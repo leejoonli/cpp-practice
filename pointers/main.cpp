@@ -67,5 +67,63 @@ int main() {
     // delete p_i; // DO NOT CALL DELETE TWICE
     p_i = nullptr;*/
 
+    // DANGLING POINTERS
+    // non initialized pointer
+    /*int *p_i;
+    cout << *p_i << endl;
+    // solution: initialize pointer
+    int *p_i = new int(1);
+    cout << *p_i << endl;*/
+
+    // deleted pointer
+    /*int *p_i = new int(1);
+    cout << *p_i << endl;
+    delete p_i;
+    // cout << *p_i << endl;
+    // solution: reset pointers after delete
+    p_i = nullptr;
+    cout << p_i << endl;*/
+
+    // multiple pointers pointing to the same address
+    /*int *p_i = new int(83);
+    int *p_j = p_i;
+    cout << p_i << ',' << *p_i << endl;
+    cout << p_j << ',' << *p_j << endl;
+    delete p_i; // deleting p_i
+    cout << p_j << ',' << *p_j << endl; // ends up with garbage value or crashes*/
+
+    // solution: make sure the owner pointer is very clear
+    /*int *p_i = nullptr; // solution 1: initialize your pointers immediately upon declaration
+    int *p_j = new int(83);
+    // check for nullptr before use
+    if(p_j != nullptr) {
+        cout << *p_j << endl;
+    } else {
+        cout << "invalid address" << endl;
+    }
+    // solution 2: reset the pointer
+    delete p_j;
+    int *p_j = nullptr;
+
+    if(p_j != nullptr) {
+        cout << *p_j << endl;
+    } else {
+        cout << "invalid address" << endl;
+    }
+
+    int *p_i = new int(234); // master pointer
+    int *p_j = p_i;
+    cout << p_i << ',' << *p_i << endl;
+    if(!(p_i == nullptr)) { // only use slave pointers when master pointer is valid
+        cout << p_j << ',' << *p_j << endl;
+    }
+    delete p_i; // release memory
+    p_i = nullptr;
+    if(!(p_i == nullptr)) { // only use slave pointers when master pointer is valid
+        cout << p_j << ',' << *p_j << endl;
+    } else {
+        cerr << "WARNING: trying to use an invalid pointer" << endl;
+    }*/
+
     return 0;
 }
