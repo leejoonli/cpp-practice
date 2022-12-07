@@ -34,17 +34,38 @@ int main() {
     /*int *p_i {}; // initialized with pointer equivalent of zero: nullptr (pointer pointing nowhere)
     *p_i = 11; // writing into a pointer pointing nowhere is BAD, WILL CRASH*/
 
-    int *p_i = nullptr;
-    p_i = new int; // dynamically allocate space for a single int on the heap
+    /*int *p_i = nullptr;
+    p_i = new int; // dynamically allocate space for a single int on the heap, same as using malloc()
                    // this memory belongs to our program from now on
                    // the system can't use it for anything else until we return it
                    // after this line executes, we will have a valid memory location allocated
                    // the size of the allocated memory will be such that it can store the type pointed to by the pointer
     *p_i = 10; // writing into dynamically allocated memory
     cout << *p_i << endl;
+    delete p_i; // return memory to the OS, same as using free()
+    p_i = nullptr; // good practice to reset pointer variable to nullptr*/
 
-    /*int *p_i = new int {10};
-    cout << *p_i << endl;*/
+    /*int *p_i = new int;
+    int *p_j {new int (10)};
+    int *p_k = new int {20};
+
+    cout << p_i << ',' << *p_i << endl;
+    cout << p_j << ',' << *p_j << endl;
+    cout << p_k << ',' << *p_k << endl;
+
+    delete p_i;
+    p_i = nullptr;
+    delete p_j;
+    p_j = nullptr;
+    delete p_k;
+    p_k = nullptr;
+
+    // can reuse pointers after using delete
+    p_i = new int (30);
+    cout << p_i << ',' << *p_i << endl;
+    delete p_i;
+    // delete p_i; // DO NOT CALL DELETE TWICE
+    p_i = nullptr;*/
 
     return 0;
 }
