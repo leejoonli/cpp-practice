@@ -149,5 +149,21 @@ int main() {
             cout << "data allocation failed" << endl;
         }
     }*/
+
+    /*// verbose nullptr check
+    int *p_i = nullptr;
+    // p_i = new int(10);
+    if(!(p_i==nullptr)) { // can also use if(p_i)
+        cout << "p_i points to a VALID address: " << p_i << endl;
+    } else {
+        cout << "p_i points to an INVALID address: " << p_i << endl;
+    }
+    delete p_i;
+    p_i = nullptr;*/
+
+    // it is OK to call delete on a nullptr
+    /*int *p_i = nullptr;
+    delete p_i;*/
+
     return 0;
 }
