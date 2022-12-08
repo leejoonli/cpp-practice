@@ -1,4 +1,5 @@
 #include <iostream>
+#include <type_traits>
 
 using namespace std;
 
@@ -164,6 +165,56 @@ int main() {
     // it is OK to call delete on a nullptr
     /*int *p_i = nullptr;
     delete p_i;*/
+
+    /*int *p_i = new int(67); // lives on the heap
+    int number = 55; // lives on the stack
+    p_i = &number; // p_i now points to address of number but the address of p_i is still active in our program but now you can no longer access it.  Memory has been leaked
+
+    // double allocation
+    int *p_i = new int(55); // this memory is still allocated
+    p_i = new int(44); // memory with int(55) is now leaked
+    delete p_i;
+    p_i = nullptr; // this does not release the memory when int(55) was allocated.  it will release the memory when int(44) was allocated
+
+    // nested scopes with dynamically allocated memory
+    {
+        int *p_i = new int(57); // allocated memory lives on the heap but after the scope of the nested {} you will lose access to it
+    } // memory with int(57) is now leaked
+    delete p_i; // THIS WILL NOT WORK SINCE p_i IS NOW OUT OF SCOPE*/
+
+    /*size_t size = 10;
+    // different ways you can declare an array dynamically and how they are initialized
+    double *p_salaries = new double[size]; // salaries array will contain garbage values
+    int *p_students = new(nothrow) int[size]{}; // all values initialized to 0
+    double *p_scores = new(nothrow) double[size]{1,2,3,4,5}; // allocating memory space for an array of size double vars. first 5 will be initialized with the input and the rest will be initialized to 0
+
+    // nullptr check and use the allocated array
+    if(p_scores) {
+        cout << "size of scores: " << sizeof(p_scores) << endl;
+        cout << "successfully allocated memory for scores" << endl;
+        for(size_t i = 0; i < size; i++) {
+            cout << "value: " << p_scores[i] << ":" << *(p_scores + i) << endl;
+        }
+    }
+    delete[] p_salaries;
+    p_salaries = nullptr;
+    delete[] p_students;
+    p_students = nullptr;
+    delete[] p_scores;
+    p_scores = nullptr;*/
+
+    // static arrays vs dynamic arrays
+    /*int scores[10] {1,2,3,4,5,6,7,8,9,10}; // lives on the stack
+    cout << "scores size: " << extent<decltype(scores)>::value << endl;
+    for(auto s: scores) {
+        cout << "value: " << s << endl;
+    }
+
+    int *p_scores = new int[10] {1,2,3,4,5,6,7,8,9,10}; // lives on the heap
+    cout << "p_scores size: " << extent<decltype(p_scores)>::value << endl; // either get compiler error or get unusable return value
+    for(auto s: p_scores) { // will not work because p_scores is a POINTER to an array, the pointer will act as the ACCESS POINT to retrieve data from a dynamic array allocated on the heap
+        cout << "value: " << s << endl;
+    }*/
 
     return 0;
 }
